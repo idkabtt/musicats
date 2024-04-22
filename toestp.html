@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loading...</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: url("loadtoistj.svg");
+      background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+    }
+    .loading-text {
+      font-size: 24px;
+      padding-top: 150px;
+    }
+    img {
+    width: 380px;
+    height: auto;
+   }
+   
+  </style>
+</head>
+<body>
+    
+  <div class="loading-text"><img src="loading.gif" alt="loading"></div>
+
+  <script>
+    // Delay redirection to main content page
+    setTimeout(function() {
+      window.location.href = 'estp.html';
+    }, 3000); // Redirect after 3 seconds (adjust as needed)
+  </script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MUSICATS</title>
+  <link rel="icon" type="image/x-icon" href="Logo.png">
+  <style>
+body {
+    background-image: url("bgdes.svg");
+    font-family: Andale Mono, monospace;
+}
+
+    .container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centered-image {
+  max-width: 100%;
+  max-height: 80vh; /* Adjust as needed */
+}
+
+.next-button {
+  position: absolute;
+  bottom: 180px; /* Adjust the top distance */
+  right: 370px; /* Adjust the right distance */
+  padding: 10px 20px;
+  border: none;
+  background-color: #1e1f1e;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  border-color: rgb(240, 243, 246);
+ border-style: solid;
+ border-width: thick;
+    
+}
+
+.next-button:hover {
+  background-color: rgb(43, 45, 43);
+}
+.loading-container {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.7);
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+      background-image: url("loadsptfy.svg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: repeat;
+    }
+    
+    .loading-spinner {
+      border: 16px solid #f3f3f3; /* Light grey */
+      border-top: 16px solid black;
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    
+    #logo {
+        position: absolute; /* Position the logo */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  width: 400px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  box-shadow: 0 10 50px rgba(0, 0, 0, 0.1);
+  top: -80px;
+    }
+  </style>
+</head>
+<body>
+    <div class="loading-container" id="loadingContainer">
+        <div class="loading-spinner"></div>
+      </div>
+  <div id="section1" class="container">
+    <img src="Description (6).svg" alt="Description Image" class="centered-image">
+    <button class="next-button" onclick="showNextSection(); loadContent()">CONTINUE</button>
+  </div>
+  <div id="section2" class="container" style="display: none;">
+    <br><br><br><br><br>
+    <div id="spotify">
+      <img id="logo" src="word.png" alt="logo">
+    <center><a href="https://open.spotify.com/playlist/3B0FZRfcUbsoN1cP53Jy9X?si=5HpAHpNISHmEfzegqGI3_w&pi=a-qV6g6w3-TSSJ">
+        <img src="6.svg" alt="Description Image" class="centered-image"></a>
+    </div>
+  </div>
+</body>
+<script>
+           function loadContent() {
+      // Show loading animation
+      document.getElementById('loadingContainer').style.display = 'flex';
+
+      // Simulate loading time (setTimeout for demonstration)
+      setTimeout(function() {
+        // Hide loading animation after 3 seconds (simulating content loading)
+        document.getElementById('loadingContainer').style.display = 'none';
+
+        // Show the next content
+        document.getElementById('content2').style.display = 'block';
+      }, 3000); // Adjust this value to simulate different loading times
+    }
+            
+            function showNextSection() {
+       
+        document.getElementById('section1').style.display = 'none';
+        document.getElementById('section2').style.display = 'block';
+        }
+</script>
+</html>
