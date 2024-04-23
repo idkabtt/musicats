@@ -121,6 +121,126 @@
     body {
       padding-top: 60px; /* Adjust as needed based on the height of your navbar */
     }
+    @media screen and (max-width: 768px) {
+  .container {
+    max-width: 90%; /* Adjust the maximum width for smaller screens */
+  }
+  .navbar {
+      background-color: transparent;
+      overflow: hidden;
+      position: fixed;
+      top: 0;
+      width: 60%;
+      align-content: flex-start;
+    }
+    #b1 {
+      font-family: Andale Mono, monospace;
+      border-radius: 50px;
+      background-color: black;
+      text-align: center;
+      width: 250px;
+      height: auto;
+      font-size: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      color: #fff;
+      position: fixed;
+      bottom: 25%;
+      left: 50%;
+      transform: translateX(-50%);
+      
+    }
+    body {
+     
+     background-color: #f0f0f0;
+     margin: 0;
+     padding: 0;
+     background-image: url("Title.png");
+     background-size: cover;
+     background-repeat: repeat;
+     font-family: Andale Mono, monospace;
+   }
+   #logo {
+        position: absolute; /* Position the logo */
+        top: 10%; /* Adjust as needed */
+        left: 50%; /* Center horizontally */
+        transform: translateX(-50%); /* Center horizontally */
+        width: 300px; /* Adjust width as needed */
+        height: auto; /* Maintain aspect ratio */
+        box-shadow: 0 10 50px rgba(0, 0, 0, 0.1);
+        padding: 70px;
+        justify-content: center;
+        align-content: center;
+    }
+    p{
+      font-size: 16px;
+      width: 500px;
+      top: 20px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+  .container {
+    max-width: 90%; /* Adjust the maximum width for smaller screens */
+  }
+  .navbar {
+      background-color: transparent;
+      overflow: hidden;
+      position: fixed;
+      top: 0;
+      width: 60%;
+      align-content: flex-start;
+      justify-self: flex-start;
+    }
+    #b1 {
+      font-family: Andale Mono, monospace;
+      border-radius: 50px;
+      background-color: black;
+      text-align: center;
+      width: 250px;
+      height: auto;
+      font-size: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      color: #fff;
+      position: fixed;
+      bottom: 25%;
+      left: 50%;
+      transform: translateX(-50%);
+      
+    }
+    body {
+     
+     background-color: #f0f0f0;
+     margin: 0;
+     padding: 0;
+     background-image: url("Title.png");
+     background-size: cover;
+     background-repeat: repeat;
+     font-family: Andale Mono, monospace;
+   }
+   #logo {
+        position: absolute; /* Position the logo */
+        top: 25%; /* Adjust as needed */
+        left: 50%; /* Center horizontally */
+        transform: translateX(-50%); /* Center horizontally */
+        width: 300px; /* Adjust width as needed */
+        height: auto; /* Maintain aspect ratio */
+        box-shadow: 0 10 50px rgba(0, 0, 0, 0.1);
+        padding: 70px;
+        justify-content: center;
+        align-content: center;
+    }
+    p{
+      font-size: small;
+      width: 200px;
+      top: 160px;
+    }
+}
   </style>
 </head>
 <body>
