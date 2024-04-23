@@ -176,13 +176,88 @@ button.continue-button:hover {
   .container {
     padding: 10px;
   }
+  .choices button {
+  margin: 5px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #817f95;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 10 50px rgba(0, 0, 0, 0.1);
+  font-family: Andale Mono, monospace;
+  font-size: 16px; /* Adjust the font size */
+  letter-spacing: 1px; /* Adjust the letter spacing */
+  text-align: left; 
+}
+.slideshow-container {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-color: #cfbdc6;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: fit-content;
+}
+body {
+  background-image: url("bg2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  margin: 0;
+  padding: 14%;
+  font-family: Andale Mono, monospace;
 }
 
-@media screen and (max-width: 576px) {
+}
+@media screen and (max-width: 480px) {
   /* Styles for screens smaller than 576px (e.g., smartphones) */
   .container {
     max-width: 90%; /* Adjust the maximum width for smaller screens */
   }
+  .choices button {
+  margin: 5px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #817f95;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 10 50px rgba(0, 0, 0, 0.1);
+  font-family: Andale Mono, monospace;
+  font-size: 16px; /* Adjust the font size */
+  letter-spacing: 1px; /* Adjust the letter spacing */
+  text-align: left; 
+}
+.slideshow-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-color: #cfbdc6;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: fit-content;
+}
+body {
+  background-image: url("bg2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  margin: 0;
+  padding: 14%;
+  font-family: Andale Mono, monospace;
+}
+
 }
 
   </style>
